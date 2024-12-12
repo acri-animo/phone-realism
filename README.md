@@ -9,6 +9,7 @@ Ultimately, the phone case items in sandbox-inventory > items > misc need to hav
 ![image](/image.png)
 ![image2](/image2.png)
 
+# sandbox-inventory > items > misc
 ```lua
 {
 		name = "case_blue",
@@ -42,6 +43,7 @@ Ultimately, the phone case items in sandbox-inventory > items > misc need to hav
 		metalic = false,
 	},
 ```
+# sandbox-phone > client > anim.lua
 ```lua
 function getPhoneModelFromColor(color)
     if color == "green" then
@@ -91,3 +93,18 @@ function newPhoneProp()
         end)
     end)
 end
+```
+# sandbox-phone > server > main.lua
+Add this server side callback to the main.lua file in server directory with the other callbacks.
+
+```lua
+Callbacks:RegisterServerCallback("Phone:GetPhoneCase", function(src, data, cb)
+		local char = Fetch:CharacterSource(src)
+		local phonecase = char:GetData("PhoneCase")
+	
+		if not phonecase then
+			phonecase = "default"
+		end
+	
+		cb(phonecase)
+	end)
