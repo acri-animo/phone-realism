@@ -1,10 +1,12 @@
 # FiveM Phone Realism (Sandbox/Mythic framework)
 
-Replacing the anim.lua in sandbox-phone > client with this one allows you to link colored phone props to the color of phone case in the UI so they match when a player opens their phone.
+These snippets allow you to link colored phone props to the color of phone case in the UI so they match when a player opens their phone.
 
 I am not providing phone props but recommend DDesigns. You will need to replace the prop names to match the ones that you add.
 
 Ultimately, the phone case items in sandbox-inventory > items > misc need to have the correct color set for the 'phoneCase' and then those colors need to be utilized in the getPhoneModelFromColor function in this anim.lua file to return the respective colored prop.
+
+I have added the client side anim.lua file and the server side main.lua file for reference.
 
 ![image](/image.png)
 ![image2](/image2.png)
