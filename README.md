@@ -6,6 +6,9 @@ I am not providing phone props but recommend DDesigns. You will need to replace 
 
 Ultimately, the phone case items in sandbox-inventory > items > misc need to have the correct color set for the 'phoneCase' and then those colors need to be utilized in the getPhoneModelFromColor function in this anim.lua file to return the respective colored prop.
 
+![image](/image.png)
+![image2](/image2.png)
+
 ```lua
 {
 		name = "case_blue",
