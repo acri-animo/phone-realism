@@ -4,7 +4,7 @@ Replacing the anim.lua in sandbox-phone > client with this one allows you to lin
 
 I am not providing phone props but recommend DDesigns. You will need to replace the prop names to match the ones that you add.
 
-Ultimately, the phone case items in sandbox-inventory need to have the correct color set for the phone case arg and then those colors need to be utilized in the getPhoneModelFromColor function in this anim.lua file to return the respective colored prop.
+Ultimately, the phone case items in sandbox-inventory > items > misc need to have the correct color set for the 'phoneCase' and then those colors need to be utilized in the getPhoneModelFromColor function in this anim.lua file to return the respective colored prop.
 
 ```lua
 {
