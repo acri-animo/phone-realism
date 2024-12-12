@@ -12,6 +12,7 @@ I have added the client side anim.lua file and the server side main.lua file for
 ![image2](/image2.png)
 
 # sandbox-inventory > items > misc
+The color set here will be used in the getPhoneModelFromColor function.
 ```lua
 {
 		name = "case_blue",
@@ -46,6 +47,7 @@ I have added the client side anim.lua file and the server side main.lua file for
 	},
 ```
 # sandbox-phone > client > anim.lua
+Add the getPhoneModelFromColor function and replace the newPhoneProp function with the one below.
 ```lua
 function getPhoneModelFromColor(color)
     if color == "green" then
